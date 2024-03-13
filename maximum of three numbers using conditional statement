@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main() {
+    int num1, num2, num3, max;
+
+    std::cout << "Enter three numbers: ";
+    std::cin >> num1 >> num2 >> num3;
+
+    if (num1 >= num2 && num1 >= num3) {
+        max = num1;
+    } else if (num2 >= num1 && num2 >= num3) {
+        max = num2;
+    } else {
+        max = num3;
+    }
+    std::cout << "The maximum of " << num1 << ", " << num2 << ", and " << num3 << " is: " << max << std::endl;
+
+    return 0;
+}
